@@ -8,7 +8,7 @@ module.exports={
     entry:'./2.manage-resources/src/index.js',
     output:{
         filename:"bundle.js",
-        path:path.resolve(__dirname,'./2.manage-resources/dist')//输出路径如果未找到将会在当前路径新建立文件
+        path:path.resolve(__dirname,'./dist')//输出路径如果未找到将会在当前路径新建立文件
     },
     module:{
         rules:[
