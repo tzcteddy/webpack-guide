@@ -20,4 +20,4 @@ module.exports={
             title:'管理输出'
         })
     ]
-}
+};

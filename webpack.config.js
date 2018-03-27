@@ -6,5 +6,6 @@ const resource = require('./2.manage-resources/webpack.resource');
 const output = require('./3.manage-output/webpack.output');
 const develop = require('./4.develop/webpack.develop');
 const hmr = require('./5.hmr/webpack.hmr');
+const tree = require('./6.tree-shaking/webpack.tree');
 
-module.exports=hmr;
+module.exports=tree;
