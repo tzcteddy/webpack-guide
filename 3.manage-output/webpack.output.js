@@ -15,7 +15,9 @@ module.exports={
         path:path.resolve(__dirname,'./dist')
     },
     plugins:[
-        new CleanWebpackPlugin(['./dist']),//在每次构建前清理 /dist 文件夹
+        new CleanWebpackPlugin(['dist'],{
+          root:__dirname
+        }),//在每次构建前清理 /dist 文件夹
         new HtmlWebpackPlugin({
             title:'管理输出'
         })

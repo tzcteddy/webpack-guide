@@ -29,7 +29,9 @@ module.exports = {
       ]
     },
     plugins:[
-       // new CleanWebpackPlugin(['./dist']),
+        new CleanWebpackPlugin(['dist'],{
+          root:__dirname
+        }),
         new HtmlWebpackPlugin({
             title:'模块热替换'
         }),

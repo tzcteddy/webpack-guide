@@ -48,7 +48,9 @@ module.exports={
 
     },
     plugins:[
-        //new CleanWebpackPlugin(["./4.develop/dist"]),
+        new CleanWebpackPlugin(["dist"],{
+           root:__dirname
+        }),
         new  HtmlWebpackPlugin({
             title:"开发"
         })

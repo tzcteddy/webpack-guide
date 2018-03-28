@@ -19,7 +19,12 @@ module.exports={
       contentBase:path.resolve(__dirname,'./dist') //绝对路径（建议使用）
     },
     plugins:[
-        new CleanWebpackPlugin(['./dist']),
+        new CleanWebpackPlugin(['dist'],{
+            root:__dirname,//一根根的绝对路径（webpack.config）
+            //verbose:true,//一个根的绝对路径
+            //dry:false, // 不要删除任何东西，主要用于测试.
+           // "exclude": ["files","to","ignore"]//排除不删除的目录，主要用于避免删除公用的文件
+        }),
         new HtmlWebpackPlugin({
             title:'tree-shaking'
         }),
