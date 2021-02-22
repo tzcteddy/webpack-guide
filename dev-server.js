@@ -7,7 +7,7 @@ const webpack = require("webpack");
 
 const config = require("./webpack.config.js");
 const options = {
-    contentBase:'./5.hmr/dist',
+    contentBase:'./8.loader/dist',
     hot:true,
     host:'localhost'
 };

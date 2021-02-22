@@ -9,4 +9,5 @@ const hmr = require('./5.hmr/webpack.hmr');
 const tree = require('./6.tree-shaking/webpack.tree');
 const dev = require('./7.product/webpack.dev');
 const prod = require('./7.product/webpack.prod');
-module.exports=dev;
+const loader = require('./8.loader/webpack.loader');
+module.exports=loader;
